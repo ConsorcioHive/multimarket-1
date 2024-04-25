@@ -9,7 +9,7 @@
     if(isset($_GET['views'])){
         $url=explode("/", $_GET['views']);
     }else{
-        $url=["login"];
+        $url=["login"]; 
     }
 
 ?>
@@ -23,7 +23,7 @@
     <?php
         use app\controllers\viewsController;
         use app\controllers\loginController;
-
+    // cambios pendientes
         $insLogin = new loginController();
 
         $viewsController= new viewsController();
