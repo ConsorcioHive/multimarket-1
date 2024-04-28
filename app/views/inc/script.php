@@ -19,6 +19,10 @@
      <!-- password-addon init -->
      <script src="<?php echo APP_URL; ?>library/html/material/assets/js/pages/password-addon.init.js"></script>
 
-    <!-- javascript hechos por mi -->
+     <!-- App js -->
+     <script src="http://localhost/multimarket/library/html/material/assets/js/app.js"></script>
+
+
+     <!-- javascript hechos por mi -->
     <script src="<?php echo APP_URL; ?>app/views/js/ajax.js" ></script>
     <script src="<?php echo APP_URL; ?>app/views/js/main.js" ></script>

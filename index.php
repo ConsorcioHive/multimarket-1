@@ -34,25 +34,27 @@
         }else{
     ?>
     <main class="page-container">
-    <?php
-            # Cerrar sesion #
-            if((!isset($_SESSION['id']) || $_SESSION['id']=="") || (!isset($_SESSION['usuario']) || $_SESSION['usuario']=="")){
-                $insLogin->cerrarSesionControlador();
-                exit();
-            }
-            require_once "./app/views/inc/navlateral.php";
-    ?>      
+        <?php
+        # Cerrar sesion #
+        if((!isset($_SESSION['id']) || $_SESSION['id']=="") || (!isset($_SESSION['usuario']) || $_SESSION['usuario']=="")){
+            $insLogin->cerrarSesionControlador();
+            exit();
+        }
+        require_once "./app/views/inc/navlateral.php";
+        ?>      
+
+        <!--
         <section class="full-width pageContent scroll" id="pageContent">
-            <?php
+            ?php
                 require_once "./app/views/inc/navbar.php";
 
                 require_once $vista;
             ?>
         </section>
+        -->
     </main>
     <?php
         }
-
         require_once "./app/views/inc/script.php"; 
     ?>
 </body>

@@ -1,12 +1,6 @@
     <!-- auth-page wrapper -->
     <form action="" method="POST" autocomplete="off" >
 
-        <?php
-			if(isset($_POST['login_usuario']) && isset($_POST['login_clave'])){
-				$insLogin->iniciarSesionControlador();
-			}
-		?>
-
         <div class="auth-page-wrapper auth-bg-cover py-5 d-flex justify-content-center align-items-center min-vh-100">    
             <div class="bg-overlay"></div>
             <!-- auth-page content -->
@@ -61,7 +55,13 @@
                                                 <h5 class="text-primary">Welcome Back !</h5>
                                                 <p class="text-muted">Sign in to continue to Velzon.</p>
                                             </div>
-
+                                            
+                                            <?php
+                                                if(isset($_POST['login_usuario']) && isset($_POST['login_clave'])){
+                                                    $insLogin->iniciarSesionControlador();
+                                                }
+                                            ?>
+                                            
                                             <div class="mt-4">
                                                 <form action="https://themesbrand.com/velzon/html/material/index.html">
 
