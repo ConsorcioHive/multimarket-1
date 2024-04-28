@@ -1,6 +1,8 @@
 <?php
+
     require_once "./config/app.php";
     require_once "./autoload.php";
+
     /*---------- Iniciando sesion ----------*/
     require_once "./app/views/inc/session_start.php";
 
@@ -9,13 +11,11 @@
     }else{
         $url=["login"]; 
     }
+
 ?>
 
 <!DOCTYPE html>
-
-<!-- viene de venzon -->
-<html lang="es" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
-
+<html lang="es">
 <head>
     <?php require_once "./app/views/inc/head.php"; ?>
 </head>
@@ -34,27 +34,25 @@
         }else{
     ?>
     <main class="page-container">
-        <?php
-        # Cerrar sesion #
-        if((!isset($_SESSION['id']) || $_SESSION['id']=="") || (!isset($_SESSION['usuario']) || $_SESSION['usuario']=="")){
-            $insLogin->cerrarSesionControlador();
-            exit();
-        }
-        require_once "./app/views/inc/navlateral.php";
-        ?>      
-
-        <!--
+    <?php
+            # Cerrar sesion #
+            if((!isset($_SESSION['id']) || $_SESSION['id']=="") || (!isset($_SESSION['usuario']) || $_SESSION['usuario']=="")){
+                $insLogin->cerrarSesionControlador();
+                exit();
+            }
+            require_once "./app/views/inc/navlateral.php";
+    ?>      
         <section class="full-width pageContent scroll" id="pageContent">
-            ?php
+            <?php
                 require_once "./app/views/inc/navbar.php";
 
                 require_once $vista;
             ?>
         </section>
-        -->
     </main>
     <?php
         }
+
         require_once "./app/views/inc/script.php"; 
     ?>
 </body>
