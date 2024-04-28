@@ -1,6 +1,5 @@
 <?php
 
-	//const APP_URL="http://localhost/elpuntoycoma/";
 	const APP_URL="http://localhost/multimarket/";
 	const APP_NAME="VENTAS";
 	const APP_SESSION_NAME="POS";

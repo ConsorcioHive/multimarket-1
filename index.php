@@ -1,8 +1,6 @@
 <?php
-
     require_once "./config/app.php";
     require_once "./autoload.php";
-
     /*---------- Iniciando sesion ----------*/
     require_once "./app/views/inc/session_start.php";
 
@@ -11,11 +9,13 @@
     }else{
         $url=["login"]; 
     }
-
 ?>
 
 <!DOCTYPE html>
-<html lang="es">
+
+<!-- viene de venzon -->
+<html lang="es" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+
 <head>
     <?php require_once "./app/views/inc/head.php"; ?>
 </head>
