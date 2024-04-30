@@ -18,8 +18,8 @@
 -- Create schema elpuntoycoma
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ elpuntoycoma;
-USE elpuntoycoma;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ multimarket;
+USE multimarket;
 
 --
 -- Table structure for table `elpuntoycoma`.`caja`
