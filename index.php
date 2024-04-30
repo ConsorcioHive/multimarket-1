@@ -3,7 +3,7 @@
     require_once "./config/app.php";
     require_once "./autoload.php";
 
-    /*---------- Iniciando sesion   ----------*/
+    /*---------- Iniciando session----------*/
     require_once "./app/views/inc/session_start.php";
 
     if(isset($_GET['views'])){
